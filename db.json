@@ -1,0 +1,82 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "userName": "sid",
+      "email": "s@gmail.com",
+      "password": "s@123",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "user",
+      "userName": "SS",
+      "password": "s@123",
+      "email": "te@in.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "usersam",
+      "userName": "samiksha",
+      "password": "s@123",
+      "email": "s@gmail.com",
+      "role": "user",
+      "isactive": false
+    },
+    {
+      "id": "sheetal",
+      "userName": "sheetal",
+      "email": "s@gmail.com",
+      "password": "s@123",
+      "role": "",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "userName": "User",
+      "id": "aa7e"
+    },
+    {
+      "code": "admin",
+      "userName": "admin",
+      "id": "25ae"
+    }
+  ],
+  "course": [
+    {
+      "coursename": "Java ",
+      "courseduration": "1",
+      "coursedescription": "Java language basics and fundamentals",
+      "technology": "IT",
+      "launchurl": "www.javalearning.com",
+      "id": "1"
+    },
+    {
+      "coursename": "C#",
+      "courseduration": "10",
+      "coursedescription": "Basics of C#",
+      "technology": "C++",
+      "launchurl": "www.c.com",
+      "id": "3"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true,
+      "id": "7c61"
+    },
+    {
+      "role": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false,
+      "id": "aea0"
+    }
+  ]
+}

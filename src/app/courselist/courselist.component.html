@@ -1,0 +1,59 @@
+<h2>Course Listing</h2>
+<mat-form-field>
+  <input matInput (keyup)="filterchange($event)" placeholder="Search  "/>
+</mat-form-field>
+<div class="mat-elevation-z8">
+    <div>
+        <a mat-raised-button color="primary" (click)="Openpopup('')" style="margin: 2%">Add New Course</a>
+    </div>
+    <table mat-table [dataSource]="finaldata" matSort class="mat-elevation-z8">
+     
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+          <td mat-cell *matCellDef="let element">{{element.id}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="coursename">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Course Name</th>
+            <td mat-cell *matCellDef="let element">{{element.coursename}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="courseduration">
+            <th mat-header-cell *matHeaderCellDef> Course Duration</th>
+            <td mat-cell *matCellDef="let element">{{element.courseduration}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="coursedescription">
+            <th mat-header-cell *matHeaderCellDef>Course Description </th>
+            <td mat-cell *matCellDef="let element">{{element.coursedescription}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="technology">
+            <th mat-header-cell *matHeaderCellDef> Technology</th>
+            <td mat-cell *matCellDef="let element">{{element.technology}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="launchurl">
+            <th mat-header-cell *matHeaderCellDef>Launch url</th>
+            <td mat-cell *matCellDef="let element">{{element.launchurl}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef> Action</th>
+            <td mat-cell *matCellDef="let element">
+                <div>
+                    <a mat-raised-button (click)="EditCourse(element.id)" color="primary">Update</a> |
+                    <a mat-raised-button (click)="RemoveCourse(element.id)"  color="accent">Delete</a>
+                </div>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayColums"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayColums;"></tr>
+
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+  showFirstLastButtons 
+  aria-label="Select page of periodic elements">
+</mat-paginator>
+</div>
