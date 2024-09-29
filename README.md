@@ -1,3 +1,5 @@
+# Learning Management System Angular Project
+
 Here is a sample `README.md` file you can use for your Angular Learning Management System project:
 
 ```markdown
@@ -16,8 +18,8 @@ This is a Learning Management System (LMS) project built using Angular. The proj
 
 Before running the project, ensure you have the following installed:
 
-- [Node.js](https://nodejs.org/en/) (v14.x or later)
-- [Angular CLI](https://angular.io/cli) (v12.x or later)
+- [Node.js](https://nodejs.org/en/) (v20.17.x or later)
+- [Angular CLI](https://angular.io/cli) (v14.x or later)
 - [JSON Server](https://www.npmjs.com/package/json-server) for mock backend data
 
 ## Getting Started
