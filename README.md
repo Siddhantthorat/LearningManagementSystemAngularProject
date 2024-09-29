@@ -113,6 +113,8 @@ Visit `https://<your-username>.github.io/<repo-name>/` to verify your applicatio
 ## Conclusion
 
 This is a simple angular based project with mock db json server , made by Siddhant Thorat .
+Deployed link : https://siddhantthorat.github.io/LearningManagementSystemAngularProject/login 
+note : install json.server and run db.json then only you can run the deployed project
 ```
 
 Make sure to replace the placeholders like `<your-username>`, `<repo-name>`, and `<your-app-name>` with your actual details.
